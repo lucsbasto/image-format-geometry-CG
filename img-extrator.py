@@ -27,3 +27,6 @@ two_pos = str(img_big_read[0]) + str(img_big_read[1])
 
 getType(two_pos) #passar as duas primeiras posições
 get_h_w(bytearray(img_big_read)) #passar a o imagem.read()
+
+
+#funciona apenas para imagens com altura e largura com até 255 px
