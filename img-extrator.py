@@ -11,9 +11,9 @@ def get_h_w(bytes):
     h = 0
     for b in range(len(bytes)):
         if (b >= 18 and b < 22):
-            w += bytes[b]
-        if (b >= 22 and b < 26):
             h += bytes[b]
+        if (b >= 22 and b < 26):
+            w += bytes[b]
 
     print("height: ", h)
     print("width: ", w)
