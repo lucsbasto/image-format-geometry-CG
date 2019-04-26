@@ -6,12 +6,12 @@ def getType(img):
 
 
 def get_height_width(bytes):
-    height = img[18]
-    width = img[22]
-    if (height < 255 and img[19] != 0):
-        height = 256 + height
-    if(width < 255 and img[23] != 0):
+    width = img[18]
+    height = img[22]
+    if (width < 255 and img[19] != 0):
         width = 256 + width
+    if(height < 255 and img[23] != 0):
+        height = 256 + height
     print("height: ", height)
     print("width: ", width)
 
@@ -23,4 +23,3 @@ type = img[:2]
 
 getType(type)
 get_height_width(img)
-
